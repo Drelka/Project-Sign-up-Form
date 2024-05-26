@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+#main-left {
+    align-items: stretch;
+    flex: 2;
+    background-image: url(https://images.unsplash.com/photo-1564598328706-70cecb6ad257?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* object-fit: contain; */
+}
+
+#main-right {
+    align-items: stretch;
+    flex: 3;
+}
