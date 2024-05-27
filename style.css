@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "nordic";
+    src: url(./norse-font/Norse-KaWl.otf);
+}
+
 html {
     font-size: 16px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -25,31 +30,50 @@ body {
 }
 
 #main-left {
-    align-items: stretch;
+    display: flex;
     flex: 2;
     background-image: url(https://images.unsplash.com/photo-1564598328706-70cecb6ad257?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: 120%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 #whole-logo {
-    background-color: #7a75281e;
+    width: 100%;
+    background-color: #d3c61610;
+    margin-top: 100px;
     display: flex;
-    margin-top: 10%;
+    height: 10rem;
+    justify-content: center;
 }
 
 #logo {
     width: 10rem;
+    background-image: url(https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px 0;
+    /* margin-left: 20px; */
+    /* background-color: black; */
 }
 
 #logo-name {
+    /* margin: 2rem; */
     color: white;
     position: relative;
     font-size: 6em;
     align-self: center;
+    font-family: "nordic";
 }
 
 #main-right {
-    align-items: stretch;
     flex: 3;
+    display: flex;
+    background-color: #130c0c;
+    align-items: center;
+}
+
+#form {
+    width: 100%;
+    height: 450px;
+    background-color: rgb(44, 100, 148);
 }
