@@ -32,6 +32,7 @@ body {
 #main-left {
     display: flex;
     flex: 2;
+    min-width: 400px;
     background-image: url(https://images.unsplash.com/photo-1564598328706-70cecb6ad257?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
     background-repeat: no-repeat;
@@ -51,8 +52,7 @@ body {
     background-image: url(https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png);
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 10px 0;
-    /* margin-left: 20px; */
+    /* margin: 10px 0; */
     /* background-color: black; */
 }
 
@@ -75,10 +75,15 @@ body {
     color: slategray;
 }
 
-.text {
-    font-size: 25px;
+#text-main-div {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 30px;
+    width: 30em;
+    font-size: 20px;
     font-family: "nordic";
-    padding: 20px;
+    color: rgb(63, 104, 145);
 }
 
 #form-div {
@@ -138,7 +143,7 @@ h2 {
 
 #submit-button:active {
     box-shadow: -0px 0px 35px 0 rgb(163, 96, 96);
-    background-color: rgb(86, 95, 104);
+    background-color: rgba(255, 255, 255, 0.404);
     transform: rotate 2s;
 }
 
@@ -148,20 +153,35 @@ ul{
     flex-direction: column;
     /* align-items: center; */
     /* justify-content: center; */
-    /* row-gap: 20px; */
+    row-gap: 2rem;
+}
+
+label {
+    padding-bottom: 5px;
 }
 
 fieldset li{
     /* border: 1px solid yellow; */
     display: flex;
     flex-direction: column;
-    flex: auto;
+    /* flex: auto; */
     /* align-self: center; */
-    /* justify-self: stretch; */
+    /* justify-self: flex-end; */
     /* list-style: none; */
     /* padding: 1rem; */
 }
 
 input {
-    max-width: 10rem;
+    max-width: 12rem;
+    min-width: 8rem;
+    font: 10p2 sans-serif;
+    padding: 7px 5px;
+    background-color: rgb(117, 45, 45);
+    border: none;
+    border-radius: 5px;
+}
+
+input:focus {
+    box-shadow: inset 3px 3px 10px black;
+    border: none;
 }
