@@ -17,7 +17,7 @@
         </div>
     </div>
     
-    <div id="main-right">
+    <form id="main-right">
         <div id="text-main-div">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quidem totam rem nihil voluptatibus neque sequi incidunt natus.
                 Odio nemo molestiae, enim, cumque deleniti possimus similique cupiditate ratione quaerat est natus delectus!
@@ -27,20 +27,20 @@
         </div>
         <div id="form-div">
             <h2>DO IT NOW!</h2>
-                <form id="form" action="">
+                <div id="form" action="">
                     <fieldset id="form-left">
                         <ul>
                             <li>
                                 <label for="first_name">FIRST NAME</label>
-                                <input type="text" name="first_name" id="first_name">
+                                <input type="text" name="first_name" id="first_name" required>
                             </li>
                             <li>
                                 <label for="email">EMAIL</label>
-                                <input type="email" name="email" id="email">
+                                <input type="email" name="email" id="email" required>
                             </li>
                             <li>
                                 <label for="password">PASSWORD</label>
-                                <input type="password" name="password" id="password">
+                                <input type="password" name="password" id="password" required>
                             </li>
                         </ul>
                     </fieldset>
@@ -48,7 +48,7 @@
                         <ul>
                             <li>
                                 <label for="last_name">LAST NAME</label>
-                                <input type="text" name="last_name" id="last_name">
+                                <input type="text" name="last_name" id="last_name" required>
                             </li>
                             <li>
                                 <label for="phone_number">PHONE NUMBER</label>
@@ -56,14 +56,14 @@
                             </li>
                             <li>
                                 <label for="password_confirm">CONFIRM PASSWORD</label>
-                                <input type="password" name="password" id="password_confirm">
+                                <input type="password" name="password" id="password_confirm" required>
                             </li>
                         </ul>
                     </fieldset>
-                </form>
-        </div>
-        <button id="submit-button">ᛋᚢᛒᛗᛁᛏ</button>
-    </div>
+                </div>
+            </div>
+        <input value="ᛋᚢᛒᛗᛁᛏ" type="submit" id="submit-button"></button>
+    </form>
 </div>
 
 </body>

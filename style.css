@@ -78,12 +78,13 @@ body {
 #text-main-div {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding-bottom: 30px;
+    /* gap: 50px; */
+    /* padding-bottom: 30px; */
     width: 30em;
     font-size: 20px;
     font-family: "nordic";
     color: rgb(63, 104, 145);
+    padding: 2rem;
 }
 
 #form-div {
@@ -125,6 +126,7 @@ h2 {
 }
 
 #submit-button {
+    color: #000;
     align-self: flex-start;
     margin: 20px 7em;
     padding: 10px 20px;
@@ -171,6 +173,14 @@ fieldset li{
     /* padding: 1rem; */
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
 input {
     max-width: 12rem;
     min-width: 8rem;
@@ -179,9 +189,11 @@ input {
     background-color: rgb(117, 45, 45);
     border: none;
     border-radius: 5px;
+    color: white;
 }
 
 input:focus {
-    box-shadow: inset 3px 3px 10px black;
+    /* box-shadow: inset 3px 3px 10px black; */
     border: none;
+    outline-offset: 0px red solid;
 }
