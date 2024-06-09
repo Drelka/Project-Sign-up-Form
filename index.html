@@ -17,52 +17,53 @@
         </div>
     </div>
     
-    <form id="main-right">
+    <form id="main-right" action="some_webpage" method="POST">
         <div id="text-main-div">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quidem totam rem nihil voluptatibus neque sequi incidunt natus.
                 Odio nemo molestiae, enim, cumque deleniti possimus similique cupiditate ratione quaerat est natus delectus!
                 Deleniti quo reiciendis adipisci consequatur sed. 
-                <br><br>Enjoy your day.
             </p>
         </div>
         <div id="form-div">
-            <h2>DO IT NOW!</h2>
-                <div id="form" action="">
-                    <fieldset id="form-left">
-                        <ul>
-                            <li>
-                                <label for="first_name">FIRST NAME</label>
-                                <input type="text" name="first_name" id="first_name" required>
-                            </li>
-                            <li>
-                                <label for="email">EMAIL</label>
-                                <input type="email" name="email" id="email" required>
-                            </li>
-                            <li>
-                                <label for="password">PASSWORD</label>
-                                <input type="password" name="password" id="password" required>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <fieldset id="form-right">
-                        <ul>
-                            <li>
-                                <label for="last_name">LAST NAME</label>
-                                <input type="text" name="last_name" id="last_name" required>
-                            </li>
-                            <li>
-                                <label for="phone_number">PHONE NUMBER</label>
-                                <input type="tel" name="phone_number" id="phone_number">
-                            </li>
-                            <li>
-                                <label for="password_confirm">CONFIRM PASSWORD</label>
-                                <input type="password" name="password" id="password_confirm" required>
-                            </li>
-                        </ul>
-                    </fieldset>
-                </div>
+            <h2>REGISTER WITH US</h2>
+            <div id="form">
+                <fieldset id="form-left">
+                    <ul>
+                        <li>
+                            <label for="first_name">FIRST NAME *</label>
+                            <input type="text" name="first_name" id="first_name" minlength="2" required>
+                        </li>
+                        <li>
+                            <label for="email">EMAIL *</label>
+                            <input type="email" name="email" id="email" placeholder="email@email.com" required>
+                        </li>
+                        <li>
+                            <label for="password">PASSWORD *</label>
+                            <input type="password" name="password" id="password" minlength="8" placeholder="choose strong password" required>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset id="form-right">
+                    <ul>
+                        <li>
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last_name">
+                        </li>
+                        <li>
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="tel" name="phone_number" id="phone_number">
+                        </li>
+                        <li>
+                            <label for="password_confirm">CONFIRM PASSWORD *</label>
+                            <input type="password" name="password" id="password_confirm" minlength="8" placeholder="confirm password" required>
+                        </li>
+                    </ul>
+                </fieldset>
             </div>
+        </div>
+        <p class="required">* these fields are required</p>
         <input value="ᛋᚢᛒᛗᛁᛏ" type="submit" id="submit-button"></button>
+        <p class="sign-in">Already registered? Sign in <a href="">here</a>.</p>
     </form>
 </div>
 
